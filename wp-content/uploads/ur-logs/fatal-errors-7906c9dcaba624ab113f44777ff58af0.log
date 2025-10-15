@@ -1,0 +1,210 @@
+2025-10-15T05:53:41+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:41+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:41+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:47+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:47+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:47+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:49+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/RestApi/controllers/version1/class-ur-modules.php(104): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1292): UR_Modules::ur_get_modules()
+#4 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request()
+#5 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch()
+#6 /var/www/suspension-advisory/wp-includes/rest-api.php(459): WP_REST_Server->serve_request()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#8 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#9 /var/www/suspension-advisory/wp-includes/plugin.php(565): WP_Hook->do_action()
+#10 /var/www/suspension-advisory/wp-includes/class-wp.php(418): do_action_ref_array()
+#11 /var/www/suspension-advisory/wp-includes/class-wp.php(818): WP->parse_request()
+#12 /var/www/suspension-advisory/wp-includes/functions.php(1342): WP->main()
+#13 /var/www/suspension-advisory/wp-blog-header.php(16): wp()
+#14 /var/www/suspension-advisory/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:49+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/RestApi/controllers/version1/class-ur-modules.php(104): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1292): UR_Modules::ur_get_modules()
+#4 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request()
+#5 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch()
+#6 /var/www/suspension-advisory/wp-includes/rest-api.php(459): WP_REST_Server->serve_request()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#8 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#9 /var/www/suspension-advisory/wp-includes/plugin.php(565): WP_Hook->do_action()
+#10 /var/www/suspension-advisory/wp-includes/class-wp.php(418): do_action_ref_array()
+#11 /var/www/suspension-advisory/wp-includes/class-wp.php(818): WP->parse_request()
+#12 /var/www/suspension-advisory/wp-includes/functions.php(1342): WP->main()
+#13 /var/www/suspension-advisory/wp-blog-header.php(16): wp()
+#14 /var/www/suspension-advisory/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:53:49+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/RestApi/controllers/version1/class-ur-modules.php(104): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1292): UR_Modules::ur_get_modules()
+#4 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request()
+#5 /var/www/suspension-advisory/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch()
+#6 /var/www/suspension-advisory/wp-includes/rest-api.php(459): WP_REST_Server->serve_request()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): rest_api_loaded()
+#8 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#9 /var/www/suspension-advisory/wp-includes/plugin.php(565): WP_Hook->do_action()
+#10 /var/www/suspension-advisory/wp-includes/class-wp.php(418): do_action_ref_array()
+#11 /var/www/suspension-advisory/wp-includes/class-wp.php(818): WP->parse_request()
+#12 /var/www/suspension-advisory/wp-includes/functions.php(1342): WP->main()
+#13 /var/www/suspension-advisory/wp-blog-header.php(16): wp()
+#14 /var/www/suspension-advisory/index.php(17): require('...')
+#15 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:54:55+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:54:55+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T05:54:55+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(3742): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/views/html-admin-settings.php(64): ur_file_get_contents()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-settings.php(343): include('...')
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/admin/class-ur-admin-menus.php(906): UR_Admin_Settings::output()
+#5 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_Admin_Menus->settings_page()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /var/www/suspension-advisory/wp-admin/admin.php(260): do_action()
+#9 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2025-10-15T08:54:57+00:00 CRITICAL Uncaught Error: Call to undefined function sub_field() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:142
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 142
+
+2025-10-15T08:54:57+00:00 CRITICAL Uncaught Error: Call to undefined function sub_field() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:142
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 142
+
+2025-10-15T08:54:57+00:00 CRITICAL Uncaught Error: Call to undefined function sub_field() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:142
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 142
+

@@ -17,14 +17,14 @@
     
 <div class="header-container">   
     <div class="header-content">
-        <div class="header-title">
+        <a href="/" class="header-title">
             <img src="/wp-content/uploads/2025/10/suspension_advisory_mega_phone.png" alt="">
             <p>C-SAS: Class Suspension Advisory System</p>
-        </div>
+        </a>
 
-        <div class="lgu-login-btn">   
+        <a href="/login" class="lgu-login-btn">   
             <img src="/wp-content/uploads/2025/10/suspension_advisory_man_icon.png" alt="">
             <span>LGU Login</span>
-        </div>
+        </a>
     </div>
 </div>

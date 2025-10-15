@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="barangay-wrapper">
+            <!-- <div class="barangay-wrapper">
                 <div class="dropdown-content">
                     <div class="dropdown-content-posts_dropdown"> 
                         <div class="dropdown-content-posts_sortby">
@@ -69,104 +69,125 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
         <div class="annoucements-container">
             <span class="annoucements-number">2 Annoucements Found</span>
-            <div class="annoucements-wrapper">
-                <div class="annoucements-title">
-                    <h3>Class Suspension - Typhoon Signal No. 3</h3>
-                    <div class="annoucements-status">
-                        Urgent
-                    </div>
+
+            <?php
+                $args = array(
+                    'post_type'      => 'posts_advisory',
+                    'post_status'    => 'publish',
+                    'order'          => 'DESC',
+                    'posts_per_page' => 5,
+                );
+
+                $development = new WP_Query( $args );
+            ?>   
+
+        <?php if ($development->have_posts()) : ?>
+
+            <?php while ($development->have_posts()) : $development->the_post(); ?>
+
+                    <div class="annoucements-wrapper">
+                        <div class="annoucements-title">
+                            <h3><?php the_title() ?></h3>
+                            <div class="annoucements-status">
+                                Urgent
+                            </div>
+                        </div>
+                    
+                        <div class="calendar-and-location">
+                            <div class="calendar">
+                                <img src="/wp-content/uploads/2025/10/suspension_advisory_calendar.png" alt="">
+                                <?php if( have_rows('posts_advisory') ): ?>
+                                    <?php while( have_rows('posts_advisory') ): the_row(); 
+                                        $date = get_sub_field('calendar');
+                                        if ($date):
+                                            echo '<span>' . $date . '</span>';
+                                        endif;
+                                    endwhile; ?>
+                                <?php endif; ?>
+                            </div>
+                            <div class="location">
+                                <img src="/wp-content/uploads/2025/10/suspension_advisory_location.png" alt="">
+                                <!-- <span>Baesa, Quezon City, Metro Manila</span> -->
+                               <?php
+                                    // Get the post author ID
+                                    $author_id = get_post_field('post_author', get_the_ID());
+
+                                    // Retrieve province and city from user meta
+                                    $province = get_user_meta($author_id, 'billing_state', true);
+                                    $city = get_user_meta($author_id, 'billing_city', true);
+
+                                    // Display both if available
+                                    if ($city || $province) {
+                                        echo '<span>' . esc_html($city);
+
+                                        // Add a comma only if both exist
+                                        if ($city && $province) {
+                                            echo ', ';
+                                        }
+
+                                        echo esc_html($province) . '</span>';
+                                    } else {
+                                        echo '<span>Location not available</span>';
+                                    }
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="annoucements-message">
+                            <?php if( have_rows('posts_advisory') ): ?>
+                                <?php while( have_rows('posts_advisory') ): the_row(); 
+                                    $text_content = get_sub_field('text_content');
+                                    if ($text_content): ?>
+                                    <?php echo $text_content; ?>
+                                    <?php endif; ?>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                        </div>
+
+                    <?php 
+                        // Get the group field
+                        $posts_advisory = get_field('posts_advisory');
+
+                        if( $posts_advisory && isset($posts_advisory['download_file']) ):
+
+                            // Get the file array
+                            $file = $posts_advisory['download_file'];
+                            $file_url = $file['url'];
+                            $file_name = $file['title']; // or use basename($file_url)
+                            
+                            // Get the file extension
+                            $file_extension = pathinfo($file_url, PATHINFO_EXTENSION);
+                    ?>
+                        <?php if($file) : ?>
+
+                        <div class="download-pdf">
+
+                            <div class="file-name">
+                                <img src="/wp-content/uploads/2025/10/suspension-advisory-icon.png" alt="">
+                                <span>
+                                    <a href="<?php echo esc_url($file_url); ?>" download>
+                                        <?php echo esc_html($file_name . '.' . $file_extension); ?>
+                                    </a>
+                                </span>
+                            </div>
+                            <img src="/wp-content/uploads/2025/10/suspension_advisory_downloa.png" alt="">
+                        </div>
+
+                        <?php endif; ?>
+                    <?php endif; ?>
+                        
                 </div>
-            
-                <div class="calendar-and-location">
-                    <div class="calendar">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_calendar.png" alt="">
-                        <span>2024-09-24</span>
-                    </div>
-                    <div class="location">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_location.png" alt="">
-                        <span>Baesa, Quezon City, Metro Manila</span>
-                    </div>
-                </div>
 
-                <p class="annoucements-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nulla dolore aspernatur, iusto velit temporibus dignissimos vel nam reiciendis ipsa debitis accusamus ratione harum animi cum sed? Tempore, sequi expedita!</p>
+                <?php endwhile; ?>
 
-                <div class="download-pdf">
-                    <div class="file-name">
-                        <img src="/wp-content/uploads/2025/10/suspension-advisory-icon.png" alt="">
-                        <span>Official_notice_spet24.pdf</span>
-                    </div>
+            <?php endif; ?>
 
-                    <img src="/wp-content/uploads/2025/10/suspension_advisory_downloa.png" alt="">
-                </div>
-            </div>
-
-            <div class="annoucements-wrapper">
-                <div class="annoucements-title">
-                    <h3>Class Suspension - Typhoon Signal No. 3</h3>
-                    <div class="annoucements-status">
-                        Urgent
-                    </div>
-                </div>
-            
-                <div class="calendar-and-location">
-                    <div class="calendar">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_calendar.png" alt="">
-                        <span>2024-09-24</span>
-                    </div>
-                    <div class="location">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_location.png" alt="">
-                        <span>Baesa, Quezon City, Metro Manila</span>
-                    </div>
-                </div>
-
-                <p class="annoucements-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nulla dolore aspernatur, iusto velit temporibus dignissimos vel nam reiciendis ipsa debitis accusamus ratione harum animi cum sed? Tempore, sequi expedita!</p>
-
-                <div class="download-pdf">
-                    <div class="file-name">
-                        <img src="/wp-content/uploads/2025/10/suspension-advisory-icon.png" alt="">
-                        <span>Official_notice_spet24.pdf</span>
-                    </div>
-
-                    <img src="/wp-content/uploads/2025/10/suspension_advisory_downloa.png" alt="">
-                </div>
-            </div>
-
-            <div class="annoucements-wrapper">
-                <div class="annoucements-title">
-                    <h3>Class Suspension - Typhoon Signal No. 3</h3>
-                    <div class="annoucements-status">
-                        Urgent
-                    </div>
-                </div>
-            
-                <div class="calendar-and-location">
-                    <div class="calendar">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_calendar.png" alt="">
-                        <span>2024-09-24</span>
-                    </div>
-                    <div class="location">
-                        <img src="/wp-content/uploads/2025/10/suspension_advisory_location.png" alt="">
-                        <span>Baesa, Quezon City, Metro Manila</span>
-                    </div>
-                </div>
-
-                <p class="annoucements-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nulla dolore aspernatur, iusto velit temporibus dignissimos vel nam reiciendis ipsa debitis accusamus ratione harum animi cum sed? Tempore, sequi expedita!</p>
-
-                <div class="download-pdf">
-                    <div class="file-name">
-                        <img src="/wp-content/uploads/2025/10/suspension-advisory-icon.png" alt="">
-                        <span>Official_notice_spet24.pdf</span>
-                    </div>
-
-                    <img src="/wp-content/uploads/2025/10/suspension_advisory_downloa.png" alt="">
-                </div>
-            </div>
         </div>
     </div>
 

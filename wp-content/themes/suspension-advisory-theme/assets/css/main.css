@@ -44,6 +44,7 @@ body {
 	align-items: center;
 	align-content: stretch;
     gap: 25px;
+    text-decoration: none;
 }
 
 .header-container .header-content .header-title img {
@@ -67,6 +68,8 @@ body {
     padding: 10px;
     background: rgb(233, 231, 231);
     border-radius: 10px;
+    text-decoration: none;
+    color: #000;
 }
 
 .header-container .header-content .lgu-login-btn img {
@@ -134,7 +137,7 @@ body {
     min-height: 250px;
 }
 
-.homepage .annoucements-container .annoucements-wrapper p.annoucements-message {
+.homepage .annoucements-container .annoucements-wrapper .annoucements-message {
   padding-bottom: 20px;
 }
 
@@ -163,7 +166,7 @@ body {
 	align-items: center;
 	align-content: center;
     gap: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .homepage .annoucements-container .annoucements-wrapper .calendar-and-location .calendar {
@@ -205,6 +208,12 @@ body {
     align-items: center;
     align-content: center;
     gap: 10px;
+}
+
+.homepage .annoucements-container .annoucements-wrapper .download-pdf .file-name span a {
+    text-decoration: none;
+    color: #000;
+
 }
 
 .homepage .annoucements-container .annoucements-wrapper .download-pdf img {

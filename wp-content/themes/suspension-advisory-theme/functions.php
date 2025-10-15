@@ -158,6 +158,288 @@ function suspension_advisory_admin_scripts() {
 }
 add_action( 'admin_enqueue_scripts', 'suspension_advisory_admin_scripts' );
 
+// Hide posts by other users in admin for non-admin roles
+function restrict_posts_to_own_author($query) {
+    global $pagenow;
+
+    // Only apply to admin post list
+    if (
+        is_admin() &&
+        $pagenow == 'edit.php' &&
+        !current_user_can('manage_options') // exclude admins
+    ) {
+        $query->set('author', get_current_user_id());
+    }
+}
+add_action('pre_get_posts', 'restrict_posts_to_own_author');
+
+
+function display_author_location_shortcode() {
+    if (!is_single()) return '';
+
+    $author_id = get_the_author_meta('ID');
+    $province = get_user_meta($author_id, 'billing_state', true);
+    $city = get_user_meta($author_id, 'billing_city', true);
+
+    if ($city || $province) {
+        return '<span>' . esc_html("$city, $province") . '</span>';
+    }
+
+    return '';
+}
+add_shortcode('author_location', 'display_author_location_shortcode');
+
+/**
+ * DEBUG VERSION - Find the correct field key
+ * Add this first to see what field keys are being used
+ */
+function ur_debug_field_keys( $valid_form_data, $form_id, $user_id ) {
+    error_log('=== USER REGISTRATION DEBUG ===');
+    error_log('User ID: ' . $user_id);
+    error_log('Form ID: ' . $form_id);
+    error_log('All fields: ' . print_r($valid_form_data, true));
+    
+    // Also log what's being saved to user meta
+    $all_meta = get_user_meta($user_id);
+    error_log('User meta after save: ' . print_r($all_meta, true));
+}
+add_action('user_registration_after_register_user_action', 'ur_debug_field_keys', 10, 3);
+
+
+/**
+ * Save full province name instead of code
+ * This version checks multiple possible field keys
+ */
+function ur_save_province_label_instead_of_code( $value, $field_key, $field_data ) {
+    
+    // Log what we're processing
+    error_log("Processing field: $field_key with value: $value");
+    
+    // Check all possible field key variations
+    $target_fields = array(
+        'billing_state',
+        'user_registration_billing_state',
+        'state',
+        'province',
+        'provincial',
+        'user_province',
+        'user_state'
+    );
+    
+    // Check if current field matches any target field
+    $is_province_field = false;
+    foreach ($target_fields as $target) {
+        if (strpos($field_key, $target) !== false) {
+            $is_province_field = true;
+            break;
+        }
+    }
+    
+    if ($is_province_field) {
+        
+        $provinces = array(
+            'ABR' => 'Abra',
+            'AGN' => 'Agusan del Norte',
+            'AGS' => 'Agusan del Sur',
+            'AKL' => 'Aklan',
+            'ALB' => 'Albay',
+            'ANT' => 'Antique',
+            'APA' => 'Apayao',
+            'AUR' => 'Aurora',
+            'BAS' => 'Basilan',
+            'BAN' => 'Bataan',
+            'BTN' => 'Batanes',
+            'BTG' => 'Batangas',
+            'BEN' => 'Benguet',
+            'BIL' => 'Biliran',
+            'BOH' => 'Bohol',
+            'BUK' => 'Bukidnon',
+            'BUL' => 'Bulacan',
+            'CAG' => 'Cagayan',
+            'CAN' => 'Camarines Norte',
+            'CAS' => 'Camarines Sur',
+            'CAM' => 'Camiguin',
+            'CAP' => 'Capiz',
+            'CAT' => 'Catanduanes',
+            'CAV' => 'Cavite',
+            'CEB' => 'Cebu',
+            'COM' => 'Compostela Valley',
+            'NCO' => 'Cotabato',
+            'DAV' => 'Davao del Norte',
+            'DAS' => 'Davao del Sur',
+            'DAC' => 'Davao Occidental',
+            'DAO' => 'Davao Oriental',
+            'DIN' => 'Dinagat Islands',
+            'EAS' => 'Eastern Samar',
+            'GUI' => 'Guimaras',
+            'IFU' => 'Ifugao',
+            'ILN' => 'Ilocos Norte',
+            'ILS' => 'Ilocos Sur',
+            'ILI' => 'Iloilo',
+            'ISA' => 'Isabela',
+            'KAL' => 'Kalinga',
+            'LUN' => 'La Union',
+            'LAG' => 'Laguna',
+            'LAN' => 'Lanao del Norte',
+            'LAS' => 'Lanao del Sur',
+            'LEY' => 'Leyte',
+            'MAG' => 'Maguindanao',
+            'MAD' => 'Marinduque',
+            'MAS' => 'Masbate',
+            'MSC' => 'Misamis Occidental',
+            'MSR' => 'Misamis Oriental',
+            'MOU' => 'Mountain Province',
+            'NEC' => 'Negros Occidental',
+            'NER' => 'Negros Oriental',
+            'NSA' => 'Northern Samar',
+            'NUE' => 'Nueva Ecija',
+            'NUV' => 'Nueva Vizcaya',
+            'MDC' => 'Occidental Mindoro',
+            'MDR' => 'Oriental Mindoro',
+            'PLW' => 'Palawan',
+            'PAM' => 'Pampanga',
+            'PAN' => 'Pangasinan',
+            'QUE' => 'Quezon',
+            'QUI' => 'Quirino',
+            'RIZ' => 'Rizal',
+            'ROM' => 'Romblon',
+            'WSA' => 'Samar',
+            'SAR' => 'Sarangani',
+            'SIQ' => 'Siquijor',
+            'SOR' => 'Sorsogon',
+            'SCO' => 'South Cotabato',
+            'SLE' => 'Southern Leyte',
+            'SUK' => 'Sultan Kudarat',
+            'SLU' => 'Sulu',
+            'SUN' => 'Surigao del Norte',
+            'SUR' => 'Surigao del Sur',
+            'TAR' => 'Tarlac',
+            'TAW' => 'Tawi-Tawi',
+            'ZMB' => 'Zambales',
+            'ZAN' => 'Zamboanga del Norte',
+            'ZAS' => 'Zamboanga del Sur',
+            'ZSI' => 'Zamboanga Sibugay',
+            '00'  => 'Metro Manila',
+        );
+        
+        // Convert code to province name
+        if ( isset( $provinces[ $value ] ) ) {
+            error_log("Converting $value to {$provinces[$value]}");
+            return $provinces[ $value ];
+        }
+    }
+    
+    return $value;
+}
+add_filter( 'user_registration_process_registration_field_value', 'ur_save_province_label_instead_of_code', 10, 3 );
+
+
+/**
+ * FALLBACK METHOD: Force update after user registration
+ * This will definitely work if the above doesn't
+ */
+function ur_force_province_name_update( $valid_form_data, $form_id, $user_id ) {
+    
+    $provinces = array(
+        'ABR' => 'Abra',
+        'AGN' => 'Agusan del Norte',
+        'AGS' => 'Agusan del Sur',
+        'AKL' => 'Aklan',
+        'ALB' => 'Albay',
+        'ANT' => 'Antique',
+        'APA' => 'Apayao',
+        'AUR' => 'Aurora',
+        'BAS' => 'Basilan',
+        'BAN' => 'Bataan',
+        'BTN' => 'Batanes',
+        'BTG' => 'Batangas',
+        'BEN' => 'Benguet',
+        'BIL' => 'Biliran',
+        'BOH' => 'Bohol',
+        'BUK' => 'Bukidnon',
+        'BUL' => 'Bulacan',
+        'CAG' => 'Cagayan',
+        'CAN' => 'Camarines Norte',
+        'CAS' => 'Camarines Sur',
+        'CAM' => 'Camiguin',
+        'CAP' => 'Capiz',
+        'CAT' => 'Catanduanes',
+        'CAV' => 'Cavite',
+        'CEB' => 'Cebu',
+        'COM' => 'Compostela Valley',
+        'NCO' => 'Cotabato',
+        'DAV' => 'Davao del Norte',
+        'DAS' => 'Davao del Sur',
+        'DAC' => 'Davao Occidental',
+        'DAO' => 'Davao Oriental',
+        'DIN' => 'Dinagat Islands',
+        'EAS' => 'Eastern Samar',
+        'GUI' => 'Guimaras',
+        'IFU' => 'Ifugao',
+        'ILN' => 'Ilocos Norte',
+        'ILS' => 'Ilocos Sur',
+        'ILI' => 'Iloilo',
+        'ISA' => 'Isabela',
+        'KAL' => 'Kalinga',
+        'LUN' => 'La Union',
+        'LAG' => 'Laguna',
+        'LAN' => 'Lanao del Norte',
+        'LAS' => 'Lanao del Sur',
+        'LEY' => 'Leyte',
+        'MAG' => 'Maguindanao',
+        'MAD' => 'Marinduque',
+        'MAS' => 'Masbate',
+        'MSC' => 'Misamis Occidental',
+        'MSR' => 'Misamis Oriental',
+        'MOU' => 'Mountain Province',
+        'NEC' => 'Negros Occidental',
+        'NER' => 'Negros Oriental',
+        'NSA' => 'Northern Samar',
+        'NUE' => 'Nueva Ecija',
+        'NUV' => 'Nueva Vizcaya',
+        'MDC' => 'Occidental Mindoro',
+        'MDR' => 'Oriental Mindoro',
+        'PLW' => 'Palawan',
+        'PAM' => 'Pampanga',
+        'PAN' => 'Pangasinan',
+        'QUE' => 'Quezon',
+        'QUI' => 'Quirino',
+        'RIZ' => 'Rizal',
+        'ROM' => 'Romblon',
+        'WSA' => 'Samar',
+        'SAR' => 'Sarangani',
+        'SIQ' => 'Siquijor',
+        'SOR' => 'Sorsogon',
+        'SCO' => 'South Cotabato',
+        'SLE' => 'Southern Leyte',
+        'SUK' => 'Sultan Kudarat',
+        'SLU' => 'Sulu',
+        'SUN' => 'Surigao del Norte',
+        'SUR' => 'Surigao del Sur',
+        'TAR' => 'Tarlac',
+        'TAW' => 'Tawi-Tawi',
+        'ZMB' => 'Zambales',
+        'ZAN' => 'Zamboanga del Norte',
+        'ZAS' => 'Zamboanga del Sur',
+        'ZSI' => 'Zamboanga Sibugay',
+        '00'  => 'Metro Manila',
+    );
+    
+    // Check all user meta for province codes
+    $all_meta = get_user_meta($user_id);
+    
+    foreach ($all_meta as $meta_key => $meta_value) {
+        // Get the actual value (user meta returns arrays)
+        $value = is_array($meta_value) ? $meta_value[0] : $meta_value;
+        
+        // If this meta value is a province code, update it
+        if (isset($provinces[$value])) {
+            error_log("Found province code $value in $meta_key, updating to {$provinces[$value]}");
+            update_user_meta($user_id, $meta_key, $provinces[$value]);
+        }
+    }
+}
+add_action('user_registration_after_register_user_action', 'ur_force_province_name_update', 20, 3);
 // function enqueue_tailwind_styles() {
 //     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
 // }
