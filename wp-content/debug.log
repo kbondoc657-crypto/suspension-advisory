@@ -1,0 +1,312 @@
+[16-Oct-2025 05:52:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_city_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:46
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 46
+[16-Oct-2025 05:52:24 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 05:53:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_city_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:46
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 46
+[16-Oct-2025 05:53:02 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 05:53:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_city_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:46
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 46
+[16-Oct-2025 05:53:02 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:08:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:08:42 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:08:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:08:44 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:12:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:12:28 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:12:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:12:29 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:12:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:12:33 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:13:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:13:46 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:13:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:13:46 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:13:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:13:47 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:36:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 618
+[16-Oct-2025 06:36:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 619
+[16-Oct-2025 06:36:12 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 620
+[16-Oct-2025 06:36:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:36:25 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 06:37:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_province_dropdown() in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php:36
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/template-loader.php(106): include()
+#1 /var/www/suspension-advisory/wp-blog-header.php(19): require_once('...')
+#2 /var/www/suspension-advisory/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/page-homepage.php on line 36
+[16-Oct-2025 06:37:50 UTC] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php(265): WP_Filesystem_FTPext->is_file()
+#3 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(417): WP_Filesystem_FTPext->chmod()
+#4 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/File.php(438): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->create()
+#5 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/FileV2/FileController.php(135): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\File->write()
+#6 /var/www/suspension-advisory/wp-content/plugins/woocommerce/src/Internal/Admin/Logging/LogHandlerFileV2.php(62): Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController->write_to_file()
+#7 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(189): Automattic\WooCommerce\Internal\Admin\Logging\LogHandlerFileV2->handle()
+#8 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-wc-logger.php(236): WC_Logger->log()
+#9 /var/www/suspension-advisory/wp-content/plugins/woocommerce/includes/class-woocommerce.php(438): WC_Logger->critical()
+#10 [internal function]: WooCommerce->log_errors()
+#11 {main}
+  thrown in /var/www/suspension-advisory/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+[16-Oct-2025 07:09:43 UTC] Automatic updates starting...
+[16-Oct-2025 07:09:45 UTC] Automatic updates complete.
+[16-Oct-2025 08:45:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 08:45:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 08:45:05 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 08:49:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 08:49:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 08:49:55 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 08:52:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 08:52:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 08:52:08 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 09:00:42 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 09:00:42 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 09:00:42 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 09:14:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 09:14:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 09:14:08 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 09:14:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 09:14:13 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 09:14:13 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[16-Oct-2025 09:14:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[16-Oct-2025 09:14:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[16-Oct-2025 09:14:43 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903

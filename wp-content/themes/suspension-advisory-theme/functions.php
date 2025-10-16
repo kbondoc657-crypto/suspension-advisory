@@ -444,3 +444,687 @@ add_action('user_registration_after_register_user_action', 'ur_force_province_na
 //     wp_enqueue_style('tailwindcss', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
 // }
 // add_action('wp_enqueue_scripts', 'enqueue_tailwind_styles');
+
+/**
+ * Get all unique provinces from registered users
+ */
+function get_registered_user_provinces() {
+    global $wpdb;
+    
+    // Find ALL meta keys that might contain province data
+    $possible_keys = $wpdb->get_col("
+        SELECT DISTINCT meta_key 
+        FROM {$wpdb->usermeta} 
+        WHERE (meta_key LIKE '%state%' 
+        OR meta_key LIKE '%province%'
+        OR meta_key LIKE '%billing_state%')
+        AND meta_value != ''
+    ");
+    
+    $provinces = array();
+    
+    // Get values from all possible keys
+    foreach ($possible_keys as $meta_key) {
+        $results = $wpdb->get_col($wpdb->prepare(
+            "SELECT DISTINCT meta_value 
+            FROM {$wpdb->usermeta} 
+            WHERE meta_key = %s 
+            AND meta_value != '' 
+            ORDER BY meta_value ASC",
+            $meta_key
+        ));
+        
+        if (!empty($results)) {
+            $provinces = array_merge($provinces, $results);
+        }
+    }
+    
+    // Remove duplicates and sort
+    $provinces = array_unique($provinces);
+    sort($provinces);
+    
+    return $provinces;
+}
+
+/**
+ * Display province dropdown - just the <li> items
+ */
+function display_province_dropdown() {
+    $provinces = get_registered_user_provinces();
+    
+    if (empty($provinces)) {
+        echo '<li class="province">No provinces found</li>';
+        return;
+    }
+    
+    // Display all provinces from registered users
+    foreach ($provinces as $province) {
+        echo '<li class="province" data-value="' . esc_attr($province) . '">';
+        echo esc_html($province);
+        echo '</li>';
+    }
+}
+
+// ==================== CITY FUNCTIONS ====================
+
+/**
+ * Get all unique cities from registered users
+ */
+function get_registered_user_cities() {
+    global $wpdb;
+    
+    // Find ALL meta keys that might contain city data
+    $possible_keys = $wpdb->get_col("
+        SELECT DISTINCT meta_key 
+        FROM {$wpdb->usermeta} 
+        WHERE (meta_key LIKE '%city%' 
+        OR meta_key LIKE '%town%'
+        OR meta_key LIKE '%billing_city%')
+        AND meta_value != ''
+    ");
+    
+    $cities = array();
+    
+    // Get values from all possible keys
+    foreach ($possible_keys as $meta_key) {
+        $results = $wpdb->get_col($wpdb->prepare(
+            "SELECT DISTINCT meta_value 
+            FROM {$wpdb->usermeta} 
+            WHERE meta_key = %s 
+            AND meta_value != '' 
+            ORDER BY meta_value ASC",
+            $meta_key
+        ));
+        
+        if (!empty($results)) {
+            $cities = array_merge($cities, $results);
+        }
+    }
+    
+    // Remove duplicates and sort
+    $cities = array_unique($cities);
+    sort($cities);
+    
+    return $cities;
+}
+
+/**
+ * Display city dropdown - just the <li> items
+ */
+function display_city_dropdown() {
+    $cities = get_registered_user_cities();
+    
+    if (empty($cities)) {
+        echo '<li class="city">No cities found</li>';
+        return;
+    }
+    
+    // Display all cities from registered users
+    foreach ($cities as $city) {
+        echo '<li class="city" data-value="' . esc_attr($city) . '">';
+        echo esc_html($city);
+        echo '</li>';
+    }
+}
+
+// ==================== AJAX HANDLERS ====================
+
+/**
+ * AJAX: Filter content by province
+ */
+function filter_by_province() {
+    check_ajax_referer('province_filter_nonce', 'nonce');
+    
+    $selected_province = isset($_POST['province']) ? sanitize_text_field($_POST['province']) : '';
+    
+    $args = array();
+    
+    if (!empty($selected_province)) {
+        $meta_keys = array('billing_state', 'user_registration_billing_state', 'state', 'province', 'provincial');
+        $meta_query = array('relation' => 'OR');
+        
+        foreach ($meta_keys as $key) {
+            $meta_query[] = array(
+                'key' => $key,
+                'value' => $selected_province,
+                'compare' => '='
+            );
+        }
+        
+        $args['meta_query'] = $meta_query;
+    }
+    
+    $users = get_users($args);
+    
+    wp_send_json_success(array(
+        'province' => $selected_province,
+        'user_count' => count($users),
+        'users' => $users
+    ));
+}
+add_action('wp_ajax_filter_by_province', 'filter_by_province');
+add_action('wp_ajax_nopriv_filter_by_province', 'filter_by_province');
+
+/**
+ * AJAX: Filter content by city
+ */
+function filter_by_city() {
+    check_ajax_referer('city_filter_nonce', 'nonce');
+    
+    $selected_city = isset($_POST['city']) ? sanitize_text_field($_POST['city']) : '';
+    
+    $args = array();
+    
+    if (!empty($selected_city)) {
+        $meta_keys = array('billing_city', 'user_registration_billing_city', 'city', 'user_city', 'town_city');
+        $meta_query = array('relation' => 'OR');
+        
+        foreach ($meta_keys as $key) {
+            $meta_query[] = array(
+                'key' => $key,
+                'value' => $selected_city,
+                'compare' => '='
+            );
+        }
+        
+        $args['meta_query'] = $meta_query;
+    }
+    
+    $users = get_users($args);
+    
+    wp_send_json_success(array(
+        'city' => $selected_city,
+        'user_count' => count($users),
+        'users' => $users
+    ));
+}
+add_action('wp_ajax_filter_by_city', 'filter_by_city');
+add_action('wp_ajax_nopriv_filter_by_city', 'filter_by_city');
+
+/**
+ * AJAX: Get cities by province (cascading dropdown)
+ */
+function get_cities_by_province() {
+    check_ajax_referer('city_filter_nonce', 'nonce');
+    
+    $selected_province = isset($_POST['province']) ? sanitize_text_field($_POST['province']) : '';
+    
+    if (empty($selected_province)) {
+        wp_send_json_error('No province selected');
+        return;
+    }
+    
+    $province_meta_keys = array('billing_state', 'user_registration_billing_state', 'state', 'province', 'provincial');
+    $city_meta_keys = array('billing_city', 'user_registration_billing_city', 'city', 'user_city', 'town_city');
+    
+    $meta_query = array('relation' => 'OR');
+    foreach ($province_meta_keys as $key) {
+        $meta_query[] = array(
+            'key' => $key,
+            'value' => $selected_province,
+            'compare' => '='
+        );
+    }
+    
+    $users = get_users(array('meta_query' => $meta_query));
+    
+    $cities = array();
+    foreach ($users as $user) {
+        foreach ($city_meta_keys as $city_key) {
+            $city = get_user_meta($user->ID, $city_key, true);
+            if (!empty($city) && !in_array($city, $cities)) {
+                $cities[] = $city;
+            }
+        }
+    }
+    
+    sort($cities);
+    
+    wp_send_json_success(array(
+        'province' => $selected_province,
+        'cities' => $cities
+    ));
+}
+add_action('wp_ajax_get_cities_by_province', 'get_cities_by_province');
+add_action('wp_ajax_nopriv_get_cities_by_province', 'get_cities_by_province');
+
+// ==================== SHORTCODES ====================
+
+/**
+ * Shortcode: [province_dropdown]
+ */
+function province_dropdown_shortcode() {
+    ob_start();
+    ?>
+    <ul class="dropdown-list" id="province-filter">
+        <li class="province active" data-value="">All Provinces</li>
+        <?php display_province_dropdown(); ?>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('province_dropdown', 'province_dropdown_shortcode');
+
+/**
+ * Shortcode: [city_dropdown]
+ */
+function city_dropdown_shortcode() {
+    ob_start();
+    ?>
+    <ul class="dropdown-list" id="city-filter">
+        <li class="city active" data-value="">All Cities</li>
+        <?php display_city_dropdown(); ?>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode('city_dropdown', 'city_dropdown_shortcode');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Add these functions to your functions.php
+ */
+
+// AJAX Handler for filtering and pagination
+function filter_advisory_posts() {
+    // Get filter parameters
+    $province = isset($_POST['province']) ? sanitize_text_field($_POST['province']) : '';
+    $city = isset($_POST['city']) ? sanitize_text_field($_POST['city']) : '';
+    $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+    $posts_per_page = isset($_POST['posts_per_page']) ? intval($_POST['posts_per_page']) : 5;
+    
+    // Base query args
+    $args = array(
+        'post_type'      => 'posts_advisory',
+        'post_status'    => 'publish',
+        'order'          => 'DESC',
+        'posts_per_page' => $posts_per_page,
+        'paged'          => $paged,
+    );
+    
+    // Build author query based on province and city filters
+    if (!empty($province) || !empty($city)) {
+        $meta_query = array('relation' => 'AND');
+        
+        if (!empty($province)) {
+            $province_meta_keys = array('billing_state', 'user_registration_billing_state', 'state', 'province', 'provincial');
+            $province_query = array('relation' => 'OR');
+            
+            foreach ($province_meta_keys as $key) {
+                $province_query[] = array(
+                    'key' => $key,
+                    'value' => $province,
+                    'compare' => '='
+                );
+            }
+            $meta_query[] = $province_query;
+        }
+        
+        if (!empty($city)) {
+            $city_meta_keys = array('billing_city', 'user_registration_billing_city', 'city', 'user_city', 'town_city');
+            $city_query = array('relation' => 'OR');
+            
+            foreach ($city_meta_keys as $key) {
+                $city_query[] = array(
+                    'key' => $key,
+                    'value' => $city,
+                    'compare' => '='
+                );
+            }
+            $meta_query[] = $city_query;
+        }
+        
+        // Get users matching the location filters
+        $user_args = array('meta_query' => $meta_query);
+        $users = get_users($user_args);
+        $author_ids = array_map(function($user) { return $user->ID; }, $users);
+        
+        if (empty($author_ids)) {
+            wp_send_json_success(array(
+                'html' => '<div class="no-results"><p>No announcements found for the selected location.</p></div>',
+                'total_posts' => 0,
+                'max_pages' => 0
+            ));
+            return;
+        }
+        
+        $args['author__in'] = $author_ids;
+    }
+    
+    // Execute query
+    $query = new WP_Query($args);
+    
+    // Start output buffering
+    ob_start();
+    
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
+            ?>
+            <div class="annoucements-wrapper">
+                <div class="annoucements-title">
+                    <h3><?php the_title(); ?></h3>
+                    <div class="annoucements-status">
+                        Urgent
+                    </div>
+                </div>
+            
+                <div class="calendar-and-location">
+                    <div class="calendar">
+                        <img src="/wp-content/uploads/2025/10/suspension_advisory_calendar.png" alt="">
+                        <?php if( have_rows('posts_advisory') ): ?>
+                            <?php while( have_rows('posts_advisory') ): the_row(); 
+                                $date = get_sub_field('calendar');
+                                if ($date):
+                                    echo '<span>' . esc_html($date) . '</span>';
+                                endif;
+                            endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                    <div class="location">
+                        <img src="/wp-content/uploads/2025/10/suspension_advisory_location.png" alt="">
+                        <?php
+                            $author_id = get_post_field('post_author', get_the_ID());
+                            $province_val = get_user_meta($author_id, 'billing_state', true);
+                            $city_val = get_user_meta($author_id, 'billing_city', true);
+
+                            if ($city_val || $province_val) {
+                                echo '<span>' . esc_html($city_val);
+                                if ($city_val && $province_val) {
+                                    echo ', ';
+                                }
+                                echo esc_html($province_val) . '</span>';
+                            } else {
+                                echo '<span>Location not available</span>';
+                            }
+                        ?>
+                    </div>
+                </div>
+
+                <div class="annoucements-message">
+                    <?php if( have_rows('posts_advisory') ): ?>
+                        <?php while( have_rows('posts_advisory') ): the_row(); 
+                            $text_content = get_sub_field('text_content');
+                            if ($text_content): 
+                                echo wp_kses_post($text_content);
+                            endif;
+                        endwhile; ?>
+                    <?php endif; ?>
+                </div>
+
+                <?php 
+                    $posts_advisory = get_field('posts_advisory');
+                    if( $posts_advisory && isset($posts_advisory['download_file']) ):
+                        $file = $posts_advisory['download_file'];
+                        $file_url = $file['url'];
+                        $file_name = $file['title'];
+                        $file_extension = pathinfo($file_url, PATHINFO_EXTENSION);
+                ?>
+                    <?php if($file) : ?>
+                        <div class="download-pdf">
+                            <div class="file-name">
+                                <img src="/wp-content/uploads/2025/10/suspension-advisory-icon.png" alt="">
+                                <span>
+                                    <a href="<?php echo esc_url($file_url); ?>" download>
+                                        <?php echo esc_html($file_name . '.' . $file_extension); ?>
+                                    </a>
+                                </span>
+                            </div>
+                            <img src="/wp-content/uploads/2025/10/suspension_advisory_downloa.png" alt="">
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            </div>
+            <?php
+        endwhile;
+    else :
+        echo '<div class="no-results"><p>No announcements found.</p></div>';
+    endif;
+    
+    $html = ob_get_clean();
+    wp_reset_postdata();
+    
+    // Return JSON response
+    wp_send_json_success(array(
+        'html' => $html,
+        'total_posts' => $query->found_posts,
+        'max_pages' => $query->max_num_pages,
+        'current_page' => $paged
+    ));
+}
+add_action('wp_ajax_filter_advisory_posts', 'filter_advisory_posts');
+add_action('wp_ajax_nopriv_filter_advisory_posts', 'filter_advisory_posts');
+
+
+/**
+ * Add this JavaScript to your theme (in footer or enqueue it)
+ */
+function advisory_filter_scripts() {
+    if (!is_page_template('page-homepage.php') && !is_front_page()) {
+        return;
+    }
+    ?>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentPage = 1;
+        let selectedProvince = '';
+        let selectedCity = '';
+        
+        const announcementsContainer = document.querySelector('.annoucements-container');
+        const announcementsNumber = document.querySelector('.annoucements-number');
+        const paginationContainer = document.querySelector('.pagination-container');
+        
+        // Province filter
+        const provinceItems = document.querySelectorAll('.dropdown-list li.province');
+        provinceItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                selectedProvince = this.getAttribute('data-value');
+                selectedCity = ''; // Reset city when province changes
+                currentPage = 1;
+                loadPosts();
+            });
+        });
+        
+        // City filter
+        const cityItems = document.querySelectorAll('.dropdown-list li.city');
+        cityItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                selectedCity = this.getAttribute('data-value');
+                currentPage = 1;
+                loadPosts();
+            });
+        });
+        
+        // Pagination click handler (delegated)
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('page-number')) {
+                e.preventDefault();
+                currentPage = parseInt(e.target.getAttribute('data-page'));
+                loadPosts();
+                
+                // Scroll to top of announcements
+                announcementsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+        
+        // Load posts function
+        function loadPosts() {
+            // Show loading state
+            const wrapper = document.querySelector('.annoucements-wrapper');
+            if (wrapper) {
+                announcementsContainer.style.opacity = '0.5';
+                announcementsContainer.style.pointerEvents = 'none';
+            }
+            
+            const formData = new FormData();
+            formData.append('action', 'filter_advisory_posts');
+            formData.append('province', selectedProvince);
+            formData.append('city', selectedCity);
+            formData.append('paged', currentPage);
+            formData.append('posts_per_page', 5);
+            
+            fetch('<?php echo admin_url('admin-ajax.php'); ?>', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Update announcements count
+                    const countText = data.data.total_posts === 1 ? '1 Announcement Found' : data.data.total_posts + ' Announcements Found';
+                    announcementsNumber.textContent = countText;
+                    
+                    // Get existing container content
+                    const existingNumber = announcementsContainer.querySelector('.annoucements-number');
+                    
+                    // Clear container but keep the counter
+                    announcementsContainer.innerHTML = '';
+                    announcementsContainer.appendChild(existingNumber);
+                    
+                    // Add new posts
+                    announcementsContainer.insertAdjacentHTML('beforeend', data.data.html);
+                    
+                    // Update pagination
+                    updatePagination(data.data.current_page, data.data.max_pages);
+                    
+                    // Restore opacity
+                    announcementsContainer.style.opacity = '1';
+                    announcementsContainer.style.pointerEvents = 'auto';
+                }
+            })
+            .catch(error => {
+                console.error('Error loading posts:', error);
+                announcementsContainer.style.opacity = '1';
+                announcementsContainer.style.pointerEvents = 'auto';
+            });
+        }
+        
+        // Update pagination
+        function updatePagination(current, maxPages) {
+            if (!paginationContainer) return;
+            
+            if (maxPages <= 1) {
+                paginationContainer.innerHTML = '';
+                return;
+            }
+            
+            let html = '<div class="pagination">';
+            
+            // Previous button
+            if (current > 1) {
+                html += '<a href="#" class="page-number prev" data-page="' + (current - 1) + '">← Previous</a>';
+            }
+            
+            // Page numbers
+            for (let i = 1; i <= maxPages; i++) {
+                if (i === current) {
+                    html += '<span class="page-number active">' + i + '</span>';
+                } else {
+                    html += '<a href="#" class="page-number" data-page="' + i + '">' + i + '</a>';
+                }
+            }
+            
+            // Next button
+            if (current < maxPages) {
+                html += '<a href="#" class="page-number next" data-page="' + (current + 1) + '">Next →</a>';
+            }
+            
+            html += '</div>';
+            paginationContainer.innerHTML = html;
+        }
+    });
+    </script>
+    
+    <style>
+    .pagination {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+    
+    .pagination .page-number {
+        padding: 8px 15px;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    
+    .pagination .page-number:hover {
+        background: #e0e0e0;
+        border-color: #999;
+    }
+    
+    .pagination .page-number.active {
+        background: #0073aa;
+        color: white;
+        border-color: #0073aa;
+        cursor: default;
+    }
+    
+    .pagination .page-number.prev,
+    .pagination .page-number.next {
+        font-weight: 600;
+    }
+    
+    .no-results {
+        text-align: center;
+        padding: 40px 20px;
+        color: #666;
+    }
+    
+    .annoucements-container {
+        transition: opacity 0.3s ease;
+    }
+    </style>
+    <?php
+}
+add_action('wp_footer', 'advisory_filter_scripts');

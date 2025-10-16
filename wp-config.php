@@ -85,7 +85,14 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+// Enable WP Debug mode
+define( 'WP_DEBUG', true );
+
+// Display errors on the site
+define( 'WP_DEBUG_DISPLAY', true );
+
+// Also log errors to a file (recommended)
+define( 'WP_DEBUG_LOG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
