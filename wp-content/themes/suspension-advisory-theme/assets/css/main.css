@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.user-registration-MyAccount-navigation-link--orders,
+.user-registration-MyAccount-navigation-link--downloads,
+.user-registration-MyAccount-navigation-link--edit-address {
+    display: none !important;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +19,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding: 0 20px;
 }
 
 .container-fluid {
@@ -48,9 +55,17 @@ body {
 }
 
 .header-container .header-content .header-title img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
 }
+
+@media (min-width: 650px) {
+    .header-container .header-content .header-title img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
 
 .header-container .header-content .header-title p {
     color: #fff;
@@ -64,6 +79,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+    /* flex-wrap: wrap; */
     gap: 10px;
     padding: 10px;
     background: rgb(233, 231, 231);
@@ -77,6 +93,10 @@ body {
     height: 25px;
 }
 
+.header-container .header-content .lgu-login-btn span {
+    white-space: nowrap;
+}
+
 .footer-container {
     padding: 20px 0;
     background: rgb(223, 223, 223)
@@ -84,12 +104,26 @@ body {
 
 .footer-content {
     display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    gap: 20px;
+ }
+
+@media (min-width: 640px) {
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
 }
+
+
 
 .footer-content .footer-socials img {
     width: 30px;
@@ -99,6 +133,10 @@ body {
 .homepage {
     background: rgb(238, 238, 238);
     min-height: 90vh;
+}
+
+.homepage .container {
+    padding-top: 30px;
 }
 
 .homepage .filter-dropdown-container {
@@ -390,7 +428,7 @@ body {
 }
 
 .registration .container {
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .registration .container h1 {

@@ -1128,3 +1128,144 @@ function advisory_filter_scripts() {
     <?php
 }
 add_action('wp_footer', 'advisory_filter_scripts');
+
+// Validation Checking if the Provincial and City already exist in database
+/**
+ * Custom validation for User Registration & Membership Plugin
+ * Validates unique billing_state and billing_city combination
+ * Add this code to your theme's functions.php
+ */
+
+// Validate billing_city field - prevent word "city" at the end
+add_filter('user_registration_validate_billing_city', 'urm_validate_city_format', 10, 3);
+
+function urm_validate_city_format($single_field, $form_data, $field_key) {
+    $billing_city = isset($_POST['billing_city']) ? sanitize_text_field($_POST['billing_city']) : '';
+    
+    if (!empty($billing_city)) {
+        // Check if the city name ends with "city" (case-insensitive)
+        if (preg_match('/\bcity\b$/i', trim($billing_city))) {
+            $admin_email = get_option('admin_email');
+            return sprintf(
+                __('Please do not include the word "city" at the end of the city name. Example: Use "Pasay" instead of "Pasay City". If you need assistance, please contact the administrator at %s', 'user-registration'),
+                $admin_email
+            );
+        }
+    }
+    
+    return $single_field;
+}
+
+// Main validation - check AFTER province code is converted
+// Priority 999 ensures this runs after the province code conversion
+add_action('user_registration_after_register_user_action', 'urm_validate_unique_location', 999, 3);
+
+function urm_validate_unique_location($valid_form_data, $form_id, $user_id) {
+    // Get the saved meta values (after province code conversion)
+    $billing_state = get_user_meta($user_id, 'billing_state', true);
+    $billing_city = get_user_meta($user_id, 'billing_city', true);
+    
+    // Get admin email for error message
+    $admin_email = get_option('admin_email');
+    
+    // Check if combination exists (excluding current user)
+    if (!empty($billing_state) && !empty($billing_city)) {
+        if (urm_location_exists($billing_state, $billing_city, $user_id)) {
+            // Delete the user that was just created
+            require_once(ABSPATH . 'wp-admin/includes/user.php');
+            wp_delete_user($user_id);
+            
+            // Show error message with admin email
+            wp_send_json_error(array(
+                'message' => sprintf(
+                    __('A user with this Province and City combination already exists. Please contact the administrator at %s for assistance.', 'user-registration'),
+                    $admin_email
+                )
+            ));
+            exit;
+        }
+    }
+}
+
+// Check database for existing combination
+function urm_location_exists($state, $city, $exclude_user_id = null) {
+    global $wpdb;
+    
+    $query = "SELECT DISTINCT u.ID 
+        FROM {$wpdb->users} u
+        INNER JOIN {$wpdb->usermeta} um1 ON u.ID = um1.user_id
+        INNER JOIN {$wpdb->usermeta} um2 ON u.ID = um2.user_id
+        WHERE um1.meta_key = 'billing_state' 
+        AND um1.meta_value = %s
+        AND um2.meta_key = 'billing_city' 
+        AND um2.meta_value = %s";
+    
+    $prepared_query = $wpdb->prepare($query, $state, $city);
+    
+    // Exclude current user
+    if ($exclude_user_id) {
+        $prepared_query .= $wpdb->prepare(" AND u.ID != %d", $exclude_user_id);
+    }
+    
+    $existing_user = $wpdb->get_var($prepared_query);
+    
+    return !empty($existing_user);
+}
+
+// For profile updates - prevent changing to existing combination
+add_action('user_registration_before_save_profile_details', 'urm_validate_profile_update', 10, 2);
+
+function urm_validate_profile_update($user_id, $form_data) {
+    // Get values from POST
+    $billing_state = isset($_POST['billing_state']) ? sanitize_text_field($_POST['billing_state']) : '';
+    $billing_city = isset($_POST['billing_city']) ? sanitize_text_field($_POST['billing_city']) : '';
+    
+    // Check if city ends with "city"
+    if (!empty($billing_city) && preg_match('/\bcity\b$/i', trim($billing_city))) {
+        $admin_email = get_option('admin_email');
+        wp_die(
+            sprintf(
+                __('Please do not include the word "city" at the end of the city name. Example: Use "Pasay" instead of "Pasay City". If you need assistance, please contact the administrator at %s', 'user-registration'),
+                $admin_email
+            ),
+            __('Validation Error', 'user-registration'),
+            array('back_link' => true, 'response' => 400)
+        );
+    }
+    
+    // If state is a code (like "00"), we need to get the actual name
+    // Check if it's being updated
+    if (!empty($billing_state) && !empty($billing_city)) {
+        // Check after potential conversion - we'll check the final saved value
+        $current_state = get_user_meta($user_id, 'billing_state', true);
+        $current_city = get_user_meta($user_id, 'billing_city', true);
+        
+        // Only check if values are changing
+        if ($billing_state !== $current_state || $billing_city !== $current_city) {
+            // For profile updates, the state might still be a code
+            // We'll check after save using a different hook
+            add_action('user_registration_after_save_profile_details', 'urm_check_profile_after_save', 10, 2);
+        }
+    }
+}
+
+function urm_check_profile_after_save($user_id, $form_data) {
+    // Get the final saved values (after any conversions)
+    $billing_state = get_user_meta($user_id, 'billing_state', true);
+    $billing_city = get_user_meta($user_id, 'billing_city', true);
+    $admin_email = get_option('admin_email');
+    
+    if (!empty($billing_state) && !empty($billing_city)) {
+        if (urm_location_exists($billing_state, $billing_city, $user_id)) {
+            // Revert to previous values or show error
+            wp_die(
+                sprintf(
+                    __('A user with this Province and City combination already exists. Your changes were not saved. Please contact the administrator at %s for assistance.', 'user-registration'),
+                    $admin_email
+                ),
+                __('Update Error', 'user-registration'),
+                array('back_link' => true, 'response' => 400)
+            );
+        }
+    }
+}

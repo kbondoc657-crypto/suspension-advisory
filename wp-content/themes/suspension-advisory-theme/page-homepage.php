@@ -11,9 +11,6 @@
 
         <div class="filter-dropdown-container">
             
-
-
-
             <!-- Filter Dropdowns -->
        
                 <!-- Province Dropdown -->

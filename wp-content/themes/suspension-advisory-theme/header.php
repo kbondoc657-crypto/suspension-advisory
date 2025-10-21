@@ -19,7 +19,7 @@
     <div class="header-content">
         <a href="/" class="header-title">
             <img src="/wp-content/uploads/2025/10/suspension_advisory_mega_phone.png" alt="">
-            <p>C-SAS: Class Suspension Advisory System</p>
+            <p>Class and work suspension Advisory System</p>
         </a>
 
         <a href="/login" class="lgu-login-btn">   

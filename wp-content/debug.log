@@ -310,3 +310,4944 @@ Stack trace:
 [16-Oct-2025 09:14:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
 [16-Oct-2025 09:14:43 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
 [16-Oct-2025 09:14:43 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[17-Oct-2025 03:17:59 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[17-Oct-2025 08:08:12 UTC] Automatic updates starting...
+[17-Oct-2025 08:08:13 UTC]   Automatic plugin updates starting...
+[17-Oct-2025 08:08:13 UTC]   Automatic plugin updates complete.
+[17-Oct-2025 08:08:14 UTC] Automatic updates complete.
+[17-Oct-2025 08:13:22 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:13:22 UTC] User ID: 11
+[17-Oct-2025 08:13:22 UTC] Form ID: 6
+[17-Oct-2025 08:13:22 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => sample1
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => sample1
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample1@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:13:22 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => sample1
+        )
+
+    [first_name] => Array
+        (
+            [0] => sample1
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760688802
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 73
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => zsSr4wX2qyF45QXKWegoAYYL1m3vR0hqXPLhsl5CzGItixlT3GQSs0OTZnWW4vL0FYblJmRlVFejlVQT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => Z8SdRZDXoNSopFLeSYVAG4EDCMpKFbUIPCR8tpmciZl5vMM6JoQSs0OTZnWW4vL0FYblJmRlVFejlVQT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:13:22 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:13:22 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:16:49 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:16:49 UTC] User ID: 12
+[17-Oct-2025 08:16:49 UTC] Form ID: 6
+[17-Oct-2025 08:16:49 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => test
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample2@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_downloa.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:16:49 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => test
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760689009
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 74
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => McKMEEU7Y0jSsoquekiWszwlnkP0zBnqQQgXuhV0tFC4c52MM3cmg3RjQ2ZGU2VzBjUEJCV1ZRU1d2UT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => jq2xbviLcdplfLF9kxzBbaeDU0re2eLOzdnRNOXMUXEOhujjG5cmg3RjQ2ZGU2VzBjUEJCV1ZRU1d2UT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:16:49 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:16:49 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:20:44 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:20:44 UTC] User ID: 13
+[17-Oct-2025 08:20:44 UTC] Form ID: 6
+[17-Oct-2025 08:20:44 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => velezjonel22@gmail.com
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample7@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_downloa-1.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:20:44 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => velezjonel22@gmail.com
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760689243
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 75
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => TVcwMCQSOmwb36cYXkN9FrqAOwXVDSEsbHQxvZTjsCwwsunm7naHdyakxyV0hyZ29kY1ZNRjArTTU1Zz09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => YO3rRJomgYSWFJakmQipwSKRxrWFi9nr8EARSAEfVz1WpO4xsOaHdyakxyV0hyZ29kY1ZNRjArTTU1Zz09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:20:44 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:20:44 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:29:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function urm_final_location_check(), 2 passed in /var/www/suspension-advisory/wp-includes/class-wp-hook.php on line 324 and exactly 3 expected in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php:1206
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): urm_final_location_check()
+#1 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/frontend/class-ur-frontend-form-handler.php(111): do_action()
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(4725): UR_Frontend_Form_Handler::handle_form()
+#5 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/class-ur-ajax.php(216): ur_process_registration()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_AJAX::user_form_submit()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/suspension-advisory/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 1206
+[17-Oct-2025 08:31:04 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function urm_final_location_check(), 2 passed in /var/www/suspension-advisory/wp-includes/class-wp-hook.php on line 324 and exactly 3 expected in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php:1206
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): urm_final_location_check()
+#1 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/frontend/class-ur-frontend-form-handler.php(111): do_action()
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(4725): UR_Frontend_Form_Handler::handle_form()
+#5 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/class-ur-ajax.php(216): ur_process_registration()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_AJAX::user_form_submit()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/suspension-advisory/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 1206
+[17-Oct-2025 08:31:51 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function urm_final_location_check(), 2 passed in /var/www/suspension-advisory/wp-includes/class-wp-hook.php on line 324 and exactly 3 expected in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php:1206
+Stack trace:
+#0 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): urm_final_location_check()
+#1 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#2 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/frontend/class-ur-frontend-form-handler.php(111): do_action()
+#4 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/functions-ur-core.php(4725): UR_Frontend_Form_Handler::handle_form()
+#5 /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/class-ur-ajax.php(216): ur_process_registration()
+#6 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(324): UR_AJAX::user_form_submit()
+#7 /var/www/suspension-advisory/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/suspension-advisory/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/suspension-advisory/wp-admin/admin-ajax.php(192): do_action()
+#10 {main}
+  thrown in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 1206
+[17-Oct-2025 08:37:19 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:37:19 UTC] User ID: 14
+[17-Oct-2025 08:37:19 UTC] Form ID: 6
+[17-Oct-2025 08:37:19 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => sample1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => sample1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:37:19 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => sample1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => sample1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760690239
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 76
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => I3KoEKdyYz4nJNQxJk423LHglhWksh3U6ErQgqM2IHZUganGyKL1dGdjVibC9iSi9CMGErUFViVEI5dz09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => NzhP0e9JFc1XTYTWntF2hWFeCO7v5P3kbBbGQ3Uf0CyCNH3Bo7L1dGdjVibC9iSi9CMGErUFViVEI5dz09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:37:19 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:37:19 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:37:19 UTC] === User Registration Debug ===
+[17-Oct-2025 08:37:19 UTC] User ID: 14
+[17-Oct-2025 08:37:19 UTC] All Meta Keys: Array
+(
+    [0] => nickname
+    [1] => first_name
+    [2] => last_name
+    [3] => description
+    [4] => rich_editing
+    [5] => syntax_highlighting
+    [6] => comment_shortcuts
+    [7] => admin_color
+    [8] => use_ssl
+    [9] => show_admin_bar_front
+    [10] => locale
+    [11] => wp_capabilities
+    [12] => wp_user_level
+    [13] => dismissed_wp_pointers
+    [14] => last_update
+    [15] => billing_country
+    [16] => billing_state
+    [17] => billing_city
+    [18] => ur_form_id
+    [19] => ur_user_ip
+    [20] => ur_login_option
+    [21] => ur_registered_language
+    [22] => urm_user_just_created
+    [23] => user_registration_file_1760336986
+    [24] => ur_confirm_approval_token
+    [25] => ur_confirm_denial_token
+    [26] => ur_user_status
+    [27] => shipping_country
+    [28] => shipping_first_name
+    [29] => shipping_last_name
+    [30] => shipping_company
+    [31] => shipping_address_1
+    [32] => shipping_address_2
+    [33] => shipping_city
+    [34] => shipping_state
+    [35] => shipping_postcode
+)
+
+[17-Oct-2025 08:37:19 UTC] billing_country = Array
+(
+    [0] => PH
+)
+
+[17-Oct-2025 08:37:19 UTC] billing_state = Array
+(
+    [0] => Metro Manila
+)
+
+[17-Oct-2025 08:37:19 UTC] billing_city = Array
+(
+    [0] => Pasay
+)
+
+[17-Oct-2025 08:39:48 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:39:48 UTC] User ID: 15
+[17-Oct-2025 08:39:48 UTC] Form ID: 6
+[17-Oct-2025 08:39:48 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => sample123456
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => sample123456
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample123456
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample123456@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_man_icon-1.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:39:48 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => sample123456
+        )
+
+    [first_name] => Array
+        (
+            [0] => sample123456
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample123456
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760690388
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 77
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => MIoBTh6OEjVjAmdfRu9kfP4fjPV2RLkws6cg6PIJLGzte8OdNheitaaG9qb211NE9PaTloL1dxUzg0QT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => K7DmloNwmXwUbzfx5paAxc3GGBqXYcX3rcMvVFYPgBM4sztQ2DeitaaG9qb211NE9PaTloL1dxUzg0QT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:39:48 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:39:48 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:43:14 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:43:14 UTC] User ID: 16
+[17-Oct-2025 08:43:14 UTC] Form ID: 6
+[17-Oct-2025 08:43:14 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => sample1234567
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => sample1234567
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1234567
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample1234567@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2-1.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:43:14 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [first_name] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760690594
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 78
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => R4PutwpGZa5DGKOIYY56JT1hdj8C8nRzBUu1UfrsCkSKJBrX46cDM2NTdGdzdDa011TTZJdjZmZlBGdz09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => VXtA6TmBFGeT3gvAawfqqggRkHOQkzx3c80HeGg4gmWAf0BhMmcDM2NTdGdzdDa011TTZJdjZmZlBGdz09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:43:14 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:43:14 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:43:29 UTC] PHP Warning:  rename(/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/temp-uploads/suspension_advisory_location-2.png,/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2-2.png): No such file or directory in /var/www/suspension-advisory/wp-content/plugins/user-registration-file-upload/includes/class-urfu-frontend.php on line 204
+[17-Oct-2025 08:43:29 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:43:29 UTC] User ID: 17
+[17-Oct-2025 08:43:29 UTC] Form ID: 6
+[17-Oct-2025 08:43:29 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => sample1234567
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => sample1234567
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => sample1234567
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => sample1234567@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay City
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:43:29 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [first_name] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [last_name] => Array
+        (
+            [0] => sample1234567
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760690608
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => FxqWIRxrAEH8z3sTBNt5yi6Nbk0mRrTklMJXSUUkyIEAOpOdExRjMwTHY2b29kSFZWVW1YYWtkZENIQT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => xRsBkTV67h5CXmlE2SpweRTPT6uFwn61PlgMpON8slxTcdu2srRjMwTHY2b29kSFZWVW1YYWtkZENIQT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:43:29 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:43:29 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:51:17 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:51:17 UTC] User ID: 18
+[17-Oct-2025 08:51:17 UTC] Form ID: 6
+[17-Oct-2025 08:51:17 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => Jonel1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2-2.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:51:17 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760691076
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 79
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => IZaiVAVeJjW0fedArjXX5KF2p1weBSCTy5ej0aIFqR3tmJnCgpRVNKZjU5V1QrN3hhTms4bEdsamRlUT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => Rb00ziX2wpVlNfrcjeRks8IXokbbkMa7AAOaqaH6bQnx0rokMxRVNKZjU5V1QrN3hhTms4bEdsamRlUT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:51:17 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:51:17 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:51:26 UTC] PHP Warning:  rename(/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/temp-uploads/suspension_advisory_location-2.png,/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2-3.png): No such file or directory in /var/www/suspension-advisory/wp-content/plugins/user-registration-file-upload/includes/class-urfu-frontend.php on line 204
+[17-Oct-2025 08:51:26 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:51:26 UTC] User ID: 19
+[17-Oct-2025 08:51:26 UTC] Form ID: 6
+[17-Oct-2025 08:51:26 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => Jonel1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay City
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:51:26 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760691086
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => Z69d8uxhRFF3LXaa3w5wB3v0mAFecCUk4JXCZlnnSpxIh08j69WG1CVGV5V043Sk9TUVNWWHUwNGg2QT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => LHZ2qH0Eh3vIbh9Z66h5BI8n8kEvpNTiUjvESfBCzZ8LndmKkQWG1CVGV5V043Sk9TUVNWWHUwNGg2QT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:51:26 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:51:26 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:51:33 UTC] PHP Warning:  rename(/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/temp-uploads/suspension_advisory_location-2.png,/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_location-2-3.png): No such file or directory in /var/www/suspension-advisory/wp-content/plugins/user-registration-file-upload/includes/class-urfu-frontend.php on line 204
+[17-Oct-2025 08:51:33 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:51:33 UTC] User ID: 20
+[17-Oct-2025 08:51:33 UTC] Form ID: 6
+[17-Oct-2025 08:51:33 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => Jonel1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay City
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:51:33 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760691093
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => 5hsfVQNFVer0Edsegn6hTKYuPEsBrQ2rStpzzIOR0R0dhmayQXL2V0bSs5bS9xL3MxdXZwRjBqVzhtUT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => p1sK48RIre6QPeHcR0sW0vkY0GXgDgTlWf0sCQM4fw9TTnDSnGL2V0bSs5bS9xL3MxdXZwRjBqVzhtUT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:51:33 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:51:33 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:52:17 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:52:17 UTC] User ID: 21
+[17-Oct-2025 08:52:17 UTC] Form ID: 6
+[17-Oct-2025 08:52:17 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => Jonel1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_calendar.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay City
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:52:17 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760691137
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 80
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => zUQgV7GU0EEtOaa7X3uEfEKv8rrBFt5XyzjPNzsjHf7mqCLmuEd3piVmdCL0pWd3FwZjAwYnBoVSsvUT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => 1kenQnavURVbWLZER4yNsZypRqy0MCaQm1TahJ8xGkKLz7ui5rd3piVmdCL0pWd3FwZjAwYnBoVSsvUT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay City
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:52:17 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:52:17 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 08:52:38 UTC] PHP Warning:  rename(/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/temp-uploads/suspension_advisory_calendar.png,/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_calendar-1.png): No such file or directory in /var/www/suspension-advisory/wp-content/plugins/user-registration-file-upload/includes/class-urfu-frontend.php on line 204
+[17-Oct-2025 08:52:38 UTC] === USER REGISTRATION DEBUG ===
+[17-Oct-2025 08:52:38 UTC] User ID: 22
+[17-Oct-2025 08:52:38 UTC] Form ID: 6
+[17-Oct-2025 08:52:38 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Jonel1234
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => Jonel1234@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Quezon City
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[17-Oct-2025 08:52:38 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [first_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [last_name] => Array
+        (
+            [0] => Jonel1234
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760691158
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Quezon City
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => BeB3V30XcgUeoEPzJo7FsfflsxJ6Y9xNF8bMpdd8aMObXoaQRJRjlYSU83em1Id2cyRUMvZXNrb3JDUT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => EWLrVeclF6cZABBdzUYNl8yI5KrsYeqUUUlvpKFAHImvVG8uoqRjlYSU83em1Id2cyRUMvZXNrb3JDUT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Quezon City
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[17-Oct-2025 08:52:38 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[17-Oct-2025 08:52:38 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[17-Oct-2025 09:54:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[17-Oct-2025 09:54:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[17-Oct-2025 09:54:59 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[17-Oct-2025 09:55:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[17-Oct-2025 09:55:03 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[17-Oct-2025 09:55:03 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[18-Oct-2025 00:15:40 UTC] Automatic updates starting...
+[18-Oct-2025 00:15:42 UTC]   Automatic plugin updates starting...
+[18-Oct-2025 00:15:42 UTC]   Automatic plugin updates complete.
+[18-Oct-2025 00:15:43 UTC] Automatic updates complete.
+[18-Oct-2025 00:16:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[18-Oct-2025 00:16:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[18-Oct-2025 00:16:58 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
+[18-Oct-2025 00:19:58 UTC] === USER REGISTRATION DEBUG ===
+[18-Oct-2025 00:19:58 UTC] User ID: 23
+[18-Oct-2025 00:19:58 UTC] Form ID: 6
+[18-Oct-2025 00:19:58 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Kevin
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => kevinbondic
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin1234
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Bondoc
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => kevinbondic@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => http://suspension-advisory.local/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_man_icon-2.png
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Pasay
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[18-Oct-2025 00:19:58 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => kevinbondic
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kevin
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bondoc
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760746798
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 81
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => 9gE6Ew5B7FyZI3JzRyqnMCV8q2uJ7mVIbcDgG9fPdky6Ud3mklZlQ5REtPM1ZQZzZMMVdvTFgzTlJrdz09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => Tc3D1oDHUcp7Us3VMCEDxCM0Ma9rNkssepf6nu1KB2CsMrIeFNZlQ5REtPM1ZQZzZMMVdvTFgzTlJrdz09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Pasay
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[18-Oct-2025 00:19:58 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[18-Oct-2025 00:19:58 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[18-Oct-2025 00:20:33 UTC] PHP Warning:  rename(/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/temp-uploads/suspension_advisory_man_icon-2.png,/var/www/suspension-advisory/wp-content/uploads/user_registration_uploads/file-uploads/suspension_advisory_man_icon-2-1.png): No such file or directory in /var/www/suspension-advisory/wp-content/plugins/user-registration-file-upload/includes/class-urfu-frontend.php on line 204
+[18-Oct-2025 00:20:33 UTC] === USER REGISTRATION DEBUG ===
+[18-Oct-2025 00:20:33 UTC] User ID: 24
+[18-Oct-2025 00:20:33 UTC] Form ID: 6
+[18-Oct-2025 00:20:33 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => Kevin
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => kevinbondic
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin1234
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => Bondoc
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => kevinbondic@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Makati
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[18-Oct-2025 00:20:33 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => kevinbondic
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kevin
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bondoc
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760746833
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Makati
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => TnLmoIt3uIzKQqYLqC8xeJf6BxI80c8xQlGYJvvFcKyb6ziQOxbzJzZUpmSW9MMk5LOWE4QUN4L0ZYZz09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => URGgw1ivARrx6X2OlHSPSUW9cndEt6WK6w7Lx8ngXJPfCndZbbbzJzZUpmSW9MMk5LOWE4QUN4L0ZYZz09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Makati
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[18-Oct-2025 00:20:33 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[18-Oct-2025 00:20:33 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[18-Oct-2025 00:25:32 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/suspension-advisory/wp-content/plugins/user-registration-pro/includes/class-ur-ajax.php on line 351
+[18-Oct-2025 00:27:45 UTC] === USER REGISTRATION DEBUG ===
+[18-Oct-2025 00:27:45 UTC] User ID: 25
+[18-Oct-2025 00:27:45 UTC] Form ID: 6
+[18-Oct-2025 00:27:45 UTC] All fields: Array
+(
+    [first_name] => stdClass Object
+        (
+            [field_name] => first_name
+            [value] => kevin
+            [field_type] => text
+            [label] => First Name
+            [extra_params] => Array
+                (
+                    [field_key] => first_name
+                    [label] => First Name
+                )
+
+        )
+
+    [user_login] => stdClass Object
+        (
+            [field_name] => user_login
+            [value] => kevinbondoc
+            [field_type] => text
+            [label] => Username
+            [extra_params] => Array
+                (
+                    [field_key] => user_login
+                    [label] => Username
+                )
+
+        )
+
+    [user_pass] => stdClass Object
+        (
+            [field_name] => user_pass
+            [value] => !Admin12345
+            [field_type] => password
+            [label] => User Password
+            [extra_params] => Array
+                (
+                    [field_key] => user_pass
+                    [label] => User Password
+                )
+
+        )
+
+    [last_name] => stdClass Object
+        (
+            [field_name] => last_name
+            [value] => bondoc
+            [field_type] => text
+            [label] => Last Name
+            [extra_params] => Array
+                (
+                    [field_key] => last_name
+                    [label] => Last Name
+                )
+
+        )
+
+    [user_email] => stdClass Object
+        (
+            [field_name] => user_email
+            [value] => kevinbondoc@gmail.com
+            [field_type] => email
+            [label] => User Email
+            [extra_params] => Array
+                (
+                    [field_key] => user_email
+                    [label] => User Email
+                )
+
+        )
+
+    [billing_country] => stdClass Object
+        (
+            [field_name] => billing_country
+            [value] => PH
+            [label] => Country
+            [extra_params] => Array
+                (
+                    [field_key] => billing_country
+                    [label] => Country
+                )
+
+        )
+
+    [file_1760336986] => stdClass Object
+        (
+            [field_name] => file_1760336986
+            [value] => Array
+                (
+                    [0] => 
+                )
+
+            [field_type] => text
+            [label] => "Please
+            [extra_params] => Array
+                (
+                    [field_key] => file
+                    [label] => Please Upload Your LGU Id
+                )
+
+        )
+
+    [billing_state] => stdClass Object
+        (
+            [field_name] => billing_state
+            [value] => 00
+            [label] => Provincial
+            [extra_params] => Array
+                (
+                    [field_key] => billing_state
+                    [label] => Provincial
+                )
+
+        )
+
+    [billing_city] => stdClass Object
+        (
+            [field_name] => billing_city
+            [value] => Caloocan
+            [field_type] => text
+            [label] => Town / City
+            [extra_params] => Array
+                (
+                    [field_key] => billing_city
+                    [label] => Town / City
+                )
+
+        )
+
+)
+
+[18-Oct-2025 00:27:45 UTC] User meta after save: Array
+(
+    [nickname] => Array
+        (
+            [0] => kevinbondoc
+        )
+
+    [first_name] => Array
+        (
+            [0] => kevin
+        )
+
+    [last_name] => Array
+        (
+            [0] => bondoc
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [syntax_highlighting] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:6:"author";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 2
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1760747265
+        )
+
+    [billing_country] => Array
+        (
+            [0] => PH
+        )
+
+    [billing_state] => Array
+        (
+            [0] => 00
+        )
+
+    [billing_city] => Array
+        (
+            [0] => Caloocan
+        )
+
+    [ur_form_id] => Array
+        (
+            [0] => 6
+        )
+
+    [ur_user_ip] => Array
+        (
+            [0] => 127.0.0.1
+        )
+
+    [ur_login_option] => Array
+        (
+            [0] => admin_approval
+        )
+
+    [ur_registered_language] => Array
+        (
+            [0] => en-US
+        )
+
+    [urm_user_just_created] => Array
+        (
+            [0] => yes
+        )
+
+    [user_registration_file_1760336986] => Array
+        (
+            [0] => 
+        )
+
+    [ur_confirm_approval_token] => Array
+        (
+            [0] => bMvigf6M2sdV8W8rqvB7OSzoeAUgJuvWih8dhUjphznaR1F7nEcFgvOEp5YjRjalgrWXAybythQ2xtQT09
+        )
+
+    [ur_confirm_denial_token] => Array
+        (
+            [0] => HQiWzMzCNKOoAEV8Y2NuP05rRZp0fN2crvwuXpIOYmndnDEW03cFgvOEp5YjRjalgrWXAybythQ2xtQT09
+        )
+
+    [ur_user_status] => Array
+        (
+            [0] => 0
+        )
+
+    [shipping_country] => Array
+        (
+            [0] => PH
+        )
+
+    [shipping_first_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_last_name] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_company] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_1] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_address_2] => Array
+        (
+            [0] => 
+        )
+
+    [shipping_city] => Array
+        (
+            [0] => Caloocan
+        )
+
+    [shipping_state] => Array
+        (
+            [0] => 00
+        )
+
+    [shipping_postcode] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[18-Oct-2025 00:27:45 UTC] Found province code 00 in billing_state, updating to Metro Manila
+[18-Oct-2025 00:27:45 UTC] Found province code 00 in shipping_state, updating to Metro Manila
+[18-Oct-2025 00:33:25 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 901
+[18-Oct-2025 00:33:25 UTC] PHP Warning:  Trying to access array offset on value of type bool in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 902
+[18-Oct-2025 00:33:25 UTC] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /var/www/suspension-advisory/wp-content/themes/suspension-advisory-theme/functions.php on line 903
