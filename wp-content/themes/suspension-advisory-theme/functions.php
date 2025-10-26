@@ -446,16 +446,33 @@ add_action('user_registration_after_register_user_action', 'ur_force_province_na
 // add_action('wp_enqueue_scripts', 'enqueue_tailwind_styles');
 
 /**
- * Get all unique provinces from registered users
+ * Get all unique provinces from APPROVED registered users only
  */
 function get_registered_user_provinces() {
     global $wpdb;
+    
+    // Get only approved user IDs (where ur_user_status = 1)
+    $approved_users = $wpdb->get_col("
+        SELECT DISTINCT user_id 
+        FROM {$wpdb->usermeta} 
+        WHERE meta_key = 'ur_user_status'
+        AND meta_value = '1'
+    ");
+    
+    // If no approved users found, return empty array
+    if (empty($approved_users)) {
+        return array();
+    }
+    
+    // Convert array to comma-separated string for SQL IN clause
+    $approved_user_ids = implode(',', array_map('intval', $approved_users));
     
     // Find ALL meta keys that might contain province data
     $possible_keys = $wpdb->get_col("
         SELECT DISTINCT meta_key 
         FROM {$wpdb->usermeta} 
-        WHERE (meta_key LIKE '%state%' 
+        WHERE user_id IN ({$approved_user_ids})
+        AND (meta_key LIKE '%state%' 
         OR meta_key LIKE '%province%'
         OR meta_key LIKE '%billing_state%')
         AND meta_value != ''
@@ -463,12 +480,13 @@ function get_registered_user_provinces() {
     
     $provinces = array();
     
-    // Get values from all possible keys
+    // Get values from all possible keys, but only from approved users
     foreach ($possible_keys as $meta_key) {
         $results = $wpdb->get_col($wpdb->prepare(
             "SELECT DISTINCT meta_value 
             FROM {$wpdb->usermeta} 
             WHERE meta_key = %s 
+            AND user_id IN ({$approved_user_ids})
             AND meta_value != '' 
             ORDER BY meta_value ASC",
             $meta_key
@@ -497,7 +515,7 @@ function display_province_dropdown() {
         return;
     }
     
-    // Display all provinces from registered users
+    // Display all provinces from approved registered users
     foreach ($provinces as $province) {
         echo '<li class="province" data-value="' . esc_attr($province) . '">';
         echo esc_html($province);
@@ -508,16 +526,33 @@ function display_province_dropdown() {
 // ==================== CITY FUNCTIONS ====================
 
 /**
- * Get all unique cities from registered users
+ * Get all unique cities from APPROVED registered users only
  */
 function get_registered_user_cities() {
     global $wpdb;
+    
+    // Get only approved user IDs (where ur_user_status = 1)
+    $approved_users = $wpdb->get_col("
+        SELECT DISTINCT user_id 
+        FROM {$wpdb->usermeta} 
+        WHERE meta_key = 'ur_user_status'
+        AND meta_value = '1'
+    ");
+    
+    // If no approved users found, return empty array
+    if (empty($approved_users)) {
+        return array();
+    }
+    
+    // Convert array to comma-separated string for SQL IN clause
+    $approved_user_ids = implode(',', array_map('intval', $approved_users));
     
     // Find ALL meta keys that might contain city data
     $possible_keys = $wpdb->get_col("
         SELECT DISTINCT meta_key 
         FROM {$wpdb->usermeta} 
-        WHERE (meta_key LIKE '%city%' 
+        WHERE user_id IN ({$approved_user_ids})
+        AND (meta_key LIKE '%city%' 
         OR meta_key LIKE '%town%'
         OR meta_key LIKE '%billing_city%')
         AND meta_value != ''
@@ -525,12 +560,13 @@ function get_registered_user_cities() {
     
     $cities = array();
     
-    // Get values from all possible keys
+    // Get values from all possible keys, but only from approved users
     foreach ($possible_keys as $meta_key) {
         $results = $wpdb->get_col($wpdb->prepare(
             "SELECT DISTINCT meta_value 
             FROM {$wpdb->usermeta} 
             WHERE meta_key = %s 
+            AND user_id IN ({$approved_user_ids})
             AND meta_value != '' 
             ORDER BY meta_value ASC",
             $meta_key
@@ -559,7 +595,7 @@ function display_city_dropdown() {
         return;
     }
     
-    // Display all cities from registered users
+    // Display all cities from approved registered users
     foreach ($cities as $city) {
         echo '<li class="city" data-value="' . esc_attr($city) . '">';
         echo esc_html($city);

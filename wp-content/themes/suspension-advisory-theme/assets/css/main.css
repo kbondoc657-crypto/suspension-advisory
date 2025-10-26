@@ -453,28 +453,10 @@ body {
 }
 
 .login-page .login-form {
-    width: 50%;
+    width: 520px;
     margin: auto auto;
     min-height: fit-content;
-	/* display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    /* transform: traslate(-50%, -50%); */
 }
-
-
-
-
-
-
-
-
 
 
 
